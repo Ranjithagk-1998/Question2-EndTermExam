@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
-
+import java.util.Collections;
 public class Question2 {
 public static void main(String[] args) {
 	List<Integer> numbers = new ArrayList<Integer>();
@@ -20,7 +20,9 @@ public static void main(String[] args) {
 
 }
 public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
+	List <Integer> L1 = new ArrayList<Integer>();
+	L1.addAll(number);
+	
 	//write your code here !! change the L1 to required value
 	return L1 ;
 }
